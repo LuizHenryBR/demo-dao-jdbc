@@ -15,6 +15,12 @@ public class Program2 {
 		Department newDep = new Department(null, "Marketing");
 		depDao.insert(newDep);
 		System.out.println("NEW:" + newDep.getName() + " department inserted! ID: " + newDep.getId());
+	
+		System.out.println("\n=== TEST1: Department findByID ===");
+		Department fDep = depDao.findById(6);
+		System.out.println(fDep);
+	
 	}
+	
 
 }

@@ -11,34 +11,34 @@ public class Department implements Serializable{
 	
 	public Department(){}
 
-	public Department(Integer id, String name) {
+	public Department(Integer id, String name){
 		this.id = id;
 		this.name = name;
 	}
 
-	public Integer getId() {
+	public Integer getId(){
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Integer id){
 		this.id = id;
 	}
 
-	public String getName() {
+	public String getName(){
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(String name){
 		this.name = name;
 	}
 
 	@Override
-	public int hashCode() {
+	public int hashCode(){
 		return Objects.hash(id);
 	}
 
 	@Override
-	public boolean equals(Object obj) {
+	public boolean equals(Object obj){
 		if (this == obj)
 			return true;
 		if (obj == null)
@@ -50,7 +50,7 @@ public class Department implements Serializable{
 	}
 
 	@Override
-	public String toString() {
+	public String toString(){
 		return "Department [id=" + id + ", name=" + name + "]";
 	}
 	

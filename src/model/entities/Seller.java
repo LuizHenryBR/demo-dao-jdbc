@@ -26,61 +26,61 @@ public class Seller implements Serializable{
 		this.department = department;
 	}
 
-	public Integer getId() {
+	public Integer getId(){
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Integer id){
 		this.id = id;
 	}
 
-	public String getName() {
+	public String getName(){
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(String name){
 		this.name = name;
 	}
 
-	public String getEmail() {
+	public String getEmail(){
 		return email;
 	}
 
-	public void setEmail(String email) {
+	public void setEmail(String email){
 		this.email = email;
 	}
 
-	public Date getBirthDate() {
+	public Date getBirthDate(){
 		return birthDate;
 	}
 
-	public void setBirthDate(Date birthDate) {
+	public void setBirthDate(Date birthDate){
 		this.birthDate = birthDate;
 	}
 
-	public Double getBaseSalary() {
+	public Double getBaseSalary(){
 		return baseSalary;
 	}
 
-	public void setBaseSalary(Double baseSalary) {
+	public void setBaseSalary(Double baseSalary){
 		this.baseSalary = baseSalary;
 	}
 
-	public Department getDepartment() {
+	public Department getDepartment(){
 		return department;
 	}
 
-	public void setDepartment(Department department) {
+	public void setDepartment(Department department){
 		this.department = department;
 	}
 
 	@Override
-	public int hashCode() {
+	public int hashCode(){
 		return Objects.hash(id);
 	}
 
 	@Override
-	public boolean equals(Object obj) {
+	public boolean equals(Object obj){
 		if (this == obj)
 			return true;
 		if (obj == null)
@@ -92,7 +92,7 @@ public class Seller implements Serializable{
 	}
 
 	@Override
-	public String toString() {
+	public String toString(){
 		return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", birthDate=" + birthDate + ", baseSalary="
 				+ baseSalary + ", department=" + department + "]";
 	}

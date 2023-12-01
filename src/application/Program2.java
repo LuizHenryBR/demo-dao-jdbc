@@ -31,13 +31,15 @@ public class Program2 {
 			System.out.println(d);
 		}
 
-		System.out.println("\n=== TEST4: Department findByID ===");
+		System.out.println("\n=== TEST4: Department delete ===");
 		int idToDelete = 9;
-		depDao.deleteById(7);
-		depDao.deleteById(8);
-		depDao.deleteById(10);
-		depDao.deleteById(11);
-		System.out.println("CAUTION! The departmente with id=" + idToDelete + " was deleted");
-		
+		depDao.deleteById(idToDelete);
+		System.out.println("CAUTION! The department with id=" + idToDelete + " was deleted");
+
+		System.out.println("\n=== TEST5: Department update ===");
+		Department depUp = depDao.findById(12);
+		depUp.setName("Cleaning");
+		depDao.update(depUp);
+		System.out.println("UPDATE! The department with id=" + depUp.getId() + " was updated");
 	}
 }
